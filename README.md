@@ -2,34 +2,47 @@
 
 ## Introduction
 
-This documentation provides an overview of a Flask-based web application designed for blogging. It covers the application's setup, user forms, database models, and routes.
+This documentation provides an overview of a Flask-based web application designed for blogging, including its setup, user forms, database models, routes, and HTML templates.
 
 ## Setup and Initialization
 
 - **File**: `__init__.py`
-- **Description**: Initializes Flask app with configurations for SQLAlchemy, Flask-Login, and Bcrypt for secure password handling.
+- **Description**: Initializes Flask app with configurations for SQLAlchemy, Flask-Login, and Bcrypt.
 
 ## User Forms
 
 - **File**: `forms.py`
-- **Description**: Defines user interaction forms using Flask-WTF, including user registration, login, account updates, and post creation forms.
+- **Description**: Defines forms for registration, login, account updates, and post creation using Flask-WTF.
 
 ## Database Models
 
 - **File**: `models.py`
-- **Description**: Contains `User` and `Post` models, detailing the database schema for storing user profiles and blog posts.
+- **Description**: Outlines `User` and `Post` models for the database schema.
 
 ## Application Routes
 
 - **File**: `routes.py`
-- **Description**: Specifies the application's routes for displaying pages, handling user authentication, account management, and blog post operations.
+- **Description**: Manages application routes for user authentication, profile management, and post operations.
+
+## HTML Templates
+
+HTML templates provide the structure and layout for the application's web pages.
+
+- **Layout Template**: `layout.html` - The base template for the application.
+- **Home Page**: `home.html` - Displays all blog posts.
+- **About Page**: `about.html` - Provides information about the application.
+- **Login Page**: `login.html` - For user login.
+- **Registration Page**: `register.html` - For new user registration.
+- **Account Page**: `account.html` - Allows users to update their profile.
+- **Create Post Page**: `create_post.html` - For creating new blog posts.
+- **Post Detail Page**: `post.html` - Displays a single post in detail.
 
 ## Features
 
-- User registration and login system.
-- Profile management for updating user details.
-- Functionality for creating, updating, and deleting blog posts.
+- Comprehensive user registration and login.
+- Profile and account management.
+- Blog post creation, editing, and deletion.
 
 ## Conclusion
 
-This Flask application provides a comprehensive platform for blogging, including user management and post interactions, demonstrating the capabilities of Flask and its extensions in web development.
+This Flask application offers a platform for blogging with user authentication, profile management, and post handling, showcasing Flask's capabilities in web development.
